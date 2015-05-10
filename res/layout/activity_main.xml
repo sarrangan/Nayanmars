@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.devi.nayanmars.MainActivity" >
+
+    <EditText 
+        android:id="@+id/input_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:hint="Search Nayanmars..."
+        android:paddingBottom="5dp"
+        android:imeOptions="actionDone"
+        android:singleLine="true"
+        android:minHeight="50dp"
+        android:layout_marginTop="5dp" />
+    
+    <ListView
+		android:id="@+id/main_menu_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/input_search" />
+
+</RelativeLayout>
