@@ -57,7 +57,7 @@ public class StoryView extends FragmentActivity {
 		
 		@Override
 		protected Void doInBackground(Void... params) {
-			while(!isCancelled() && loader != 30){
+			while(!isCancelled() && loader != 5){
 				try {
 					Thread.sleep(1000);
 				} catch (InterruptedException e) {
@@ -70,7 +70,7 @@ public class StoryView extends FragmentActivity {
 					}
 				});
 				System.out.println("Loader: " + loader);
-				loader++;
+				loader+=1;
 			}
 			return null;
 		}
